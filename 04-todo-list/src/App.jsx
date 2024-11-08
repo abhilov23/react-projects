@@ -4,22 +4,29 @@ import {useState} from "react"
 
 function App() {
     
-     const [todos, setTodos] = useState([
-      'Go to the gym',
-      'eat more fruits and vege',
-      'pick up the kids from school'
-     ])
+     const [todos, setTodos] = useState([])
 
     function handleAddTodos(newTodo){
       const newTodoList = [...todos, newTodo]
       setTodos(newTodoList)
     }
 
+    function handleDeleteTodos(index){
+      const newTodoList = todos.filter((todo, todoIndex) => {
+        return todoIndex !== index
+      })
+      setTodos(newTodoList)
+    }
+
+    function handleEditTodos(index){
+    
+    }
+
 
   return (
     <>
-        <TodoInput />
-        <TodoList todos={todos} />
+        <TodoInput handleAddTodos={handleAddTodos}/>
+        <TodoList handleDeleteTodos={handleDeleteTodos} todos={todos} />
     </>
   )
 }
