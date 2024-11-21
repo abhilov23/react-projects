@@ -13,7 +13,7 @@ const Analytics = () => {
                 Id assumenda praesentium fuga odit at? Repudiandae ea,
                 facilis dicta repellendus mollitia perferendis voluptatum reiciendis maxime,
                  enim a nisi corporis at. Ab.</p>
-                 <button className='hover:bg-[#00df9a] bg-black w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-white shadow mx-auto md:mx-0'>Get Started!</button>
+                 <button className='hover:bg-[#00df9a] bg-black w-[200px] rounded-md font-medium my-6 px-6 py-3 text-white shadow mx-auto md:mx-0'>Get Started!</button>
         </div>
      </div>
     </div>
